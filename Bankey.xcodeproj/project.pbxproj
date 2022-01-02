@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45367B882780B83B005A7EFC /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45367B872780B83B005A7EFC /* OnboardingContainerViewController.swift */; };
+		45B76568278180F9007737EC /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B76567278180F9007737EC /* OnboardingViewController.swift */; };
+		45B7656A2781D6BD007737EC /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B765692781D6BD007737EC /* DummyViewController.swift */; };
+		45B7656D2781E028007737EC /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B7656C2781E028007737EC /* LocalState.swift */; };
 		45BE99D4277F5C0600DAE8EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BE99D3277F5C0600DAE8EE /* AppDelegate.swift */; };
 		45BE99D8277F5C0600DAE8EE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BE99D7277F5C0600DAE8EE /* LoginViewController.swift */; };
 		45BE99DD277F5C0800DAE8EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45BE99DC277F5C0800DAE8EE /* Assets.xcassets */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		45367B872780B83B005A7EFC /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
+		45B76567278180F9007737EC /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		45B765692781D6BD007737EC /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
+		45B7656C2781E028007737EC /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
 		45BE99D0277F5C0600DAE8EE /* Bankey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45BE99D3277F5C0600DAE8EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45BE99D7277F5C0600DAE8EE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +43,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45367B862780B815005A7EFC /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				45367B872780B83B005A7EFC /* OnboardingContainerViewController.swift */,
+				45B76567278180F9007737EC /* OnboardingViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		45B7656B2781E01C007737EC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				45B7656C2781E028007737EC /* LocalState.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		45BE99C7277F5C0600DAE8EE = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +79,10 @@
 		45BE99D2277F5C0600DAE8EE /* Bankey */ = {
 			isa = PBXGroup;
 			children = (
+				45B7656B2781E01C007737EC /* Utils */,
 				45BE99EA277F9A0100DAE8EE /* Default */,
 				45BE99E7277F68A300DAE8EE /* Login */,
+				45367B862780B815005A7EFC /* Onboarding */,
 				45BE99E1277F5C0800DAE8EE /* Info.plist */,
 			);
 			path = Bankey;
@@ -66,6 +93,7 @@
 			children = (
 				45BE99D7277F5C0600DAE8EE /* LoginViewController.swift */,
 				45BE99E8277F68B300DAE8EE /* LoginView.swift */,
+				45B765692781D6BD007737EC /* DummyViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -151,8 +179,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				45BE99E9277F68B300DAE8EE /* LoginView.swift in Sources */,
+				45B7656D2781E028007737EC /* LocalState.swift in Sources */,
+				45B7656A2781D6BD007737EC /* DummyViewController.swift in Sources */,
 				45BE99D8277F5C0600DAE8EE /* LoginViewController.swift in Sources */,
+				45B76568278180F9007737EC /* OnboardingViewController.swift in Sources */,
 				45BE99D4277F5C0600DAE8EE /* AppDelegate.swift in Sources */,
+				45367B882780B83B005A7EFC /* OnboardingContainerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,14 @@
 
 import UIKit
 
+protocol LoginViewControllerDelegate: AnyObject {
+    func didLogin()
+}
+
+protocol LogoutDelegate: AnyObject {
+    func didLogout()
+}
+
 final class LoginViewController: UIViewController {
     
     let loginView = LoginView()
@@ -14,6 +22,8 @@ final class LoginViewController: UIViewController {
     let subtitleLabel = UILabel()
     let signInButton = UIButton(type: .system)
     let errorMessageLabel = UILabel()
+    
+    weak var delegate: LoginViewControllerDelegate?
     
     var username: String? {
         return loginView.usernameTextField.text
@@ -30,6 +40,14 @@ final class LoginViewController: UIViewController {
         layout()
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        if #available(iOS 15.0, *) {
+            signInButton.configuration?.showsActivityIndicator = false
+        } else {
+            // Fallback on earlier versions
+        }
+    }
     
 }
 
@@ -128,17 +146,18 @@ extension LoginViewController {
             return
         }
         
-        if username.isEmpty || password.isEmpty {
-            configureView(withMessage: "Username / password cannot be blank")
-            return
-        }
+//        if username.isEmpty || password.isEmpty {
+//            configureView(withMessage: "Username / password cannot be blank")
+//            return
+//        }
         
-        if username == "Kevin" && password == "Welcome" {
+        if username == "" && password == "" {
             if #available(iOS 15.0, *) {
                 signInButton.configuration?.showsActivityIndicator = true
             } else {
                 // For earlier versions
             }
+            delegate?.didLogin()
         } else {
             configureView(withMessage: "Incorrect username / password")
         }
