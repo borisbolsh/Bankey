@@ -24,6 +24,10 @@ final class LoginView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    override var intrinsicContentSize: CGSize {
+          return CGSize(width: UIView.noIntrinsicMetric, height: UIView.noIntrinsicMetric)
+      }
 
 }
 
@@ -50,6 +54,7 @@ extension LoginView {
         passwordTextField.placeholder = "Password"
         passwordTextField.isSecureTextEntry = true
         passwordTextField.delegate = self
+        passwordTextField.enablePasswordToggle()
         
         dividerView.translatesAutoresizingMaskIntoConstraints = false
         if #available(iOS 13.0, *) {
