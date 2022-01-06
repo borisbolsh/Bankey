@@ -33,6 +33,8 @@
 		45BE99DD277F5C0800DAE8EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45BE99DC277F5C0800DAE8EE /* Assets.xcassets */; };
 		45BE99E0277F5C0800DAE8EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45BE99DE277F5C0800DAE8EE /* LaunchScreen.storyboard */; };
 		45BE99E9277F68B300DAE8EE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BE99E8277F68B300DAE8EE /* LoginView.swift */; };
+		45D792842786ADCE008FDE28 /* SkeletonLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D792832786ADCE008FDE28 /* SkeletonLoadable.swift */; };
+		45D792862786AE0A008FDE28 /* SkeletonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D792852786AE0A008FDE28 /* SkeletonCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		45BE99DF277F5C0800DAE8EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45BE99E1277F5C0800DAE8EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45BE99E8277F68B300DAE8EE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		45D792832786ADCE008FDE28 /* SkeletonLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonLoadable.swift; sourceTree = "<group>"; };
+		45D792852786AE0A008FDE28 /* SkeletonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,8 @@
 			isa = PBXGroup;
 			children = (
 				453339FF27834BE300891D22 /* AccountSummaryCell.swift */,
+				45D792832786ADCE008FDE28 /* SkeletonLoadable.swift */,
+				45D792852786AE0A008FDE28 /* SkeletonCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -360,7 +366,9 @@
 				456EDE942784E8C800802C9F /* ShakeyBellView.swift in Sources */,
 				45333A0027834BE300891D22 /* AccountSummaryCell.swift in Sources */,
 				45B76568278180F9007737EC /* OnboardingViewController.swift in Sources */,
+				45D792842786ADCE008FDE28 /* SkeletonLoadable.swift in Sources */,
 				457F8FEA27820EDB001B6B47 /* MainViewController.swift in Sources */,
+				45D792862786AE0A008FDE28 /* SkeletonCell.swift in Sources */,
 				456EDE972784EBF300802C9F /* UIView+Ext.swift in Sources */,
 				453339F727831EF900891D22 /* AccountSummaryViewController.swift in Sources */,
 				45BE99D4277F5C0600DAE8EE /* AppDelegate.swift in Sources */,
